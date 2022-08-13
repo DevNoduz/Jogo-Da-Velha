@@ -1,0 +1,138 @@
+*{
+    overflow: hidden;
+}
+
+ body{
+    text-align: center;
+    background-size: cover;
+    background-color: #e3aaff;
+    color: #fff;
+ }
+ 
+
+ h1{
+    font-family: Arial, Helvetica, sans-serif;
+    animation: animation 5s infinite;
+ }
+
+
+ .square{
+    width: 100px;
+    height: 100px;
+    background-color: #E280D5;
+    border: 1px solid rgba(81, 5, 83, 0.075);
+    border-radius: 10px;
+    display: inline-block;
+ }
+
+.o{
+    position: relative;
+}
+
+.o:after{
+    position: absolute;
+    content: "\2B55";
+    font-size: 50px;
+    line-height: 100px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+
+.x{
+    position: relative;
+}
+
+.x:after{
+    position: absolute;
+    content: "\2716";
+    font-size: 50px;
+    line-height: 100px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.square:hover{
+    background-color: rgb(247, 112, 224);
+    animation: animation 500ms ;
+    
+}
+
+#gameName{
+    margin: 35px;
+}
+
+#velha{
+    position: absolute;
+    left: 75%;
+    bottom: 0;
+    animation: animation 5s infinite;
+}
+
+ul{
+  position: absolute;
+  bottom: 150px;
+  cursor: pointer;
+  list-style: none;
+}
+
+ul{
+    padding: 5px;
+}
+
+.stage{
+   margin-top: 150px;
+}
+
+.footer{
+    background-color: rosybrown;
+
+}
+#like:hover{
+    animation-name: butao;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#git:hover{
+    animation-name: butao;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#insta:hover{
+    animation-name: butao;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes animation{
+    0%{
+        transform: scale(1.0);
+    }
+    50%{
+        transform:  scale(1.10);
+    }
+    100%{
+        transform:  scale(1.0);
+    }
+}
+@keyframes butao {
+    0%{
+        transform: scale(1.0);
+    }
+
+    100%{
+        transform:  scale(1.05);
+    }
+}
